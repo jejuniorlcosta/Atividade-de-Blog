@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+@font-face {
+    font-family: pokedex;
+    src: url(/font/orange\ juice\ 20.ttf);
+}
+
+body {
+    font-family: "Share Tech", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/imagem-fundo2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.2;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+section,
+footer {
+    padding: 30px;
+}
+
+h1 {
+    padding: 30px;
+    font-family: pokedex;
+    font-size: 4em;
+    text-shadow: 1px 8px 4px #1a1915;
+}
+
+.vermelho {
+    color: rgb(196, 14, 14);
+}
+
+.amarelo {
+    color: #FFDE00;
+}
+
+.container {
+    max-width: 950px;
+    background-color: rgb(40, 40, 41, 0.9);
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background: linear-gradient(90deg, #ff0000, #0000ff, #008000)
+}
+
+nav{
+    background-color: #3b3b3b;
+    display: flex;
+    gap: 20rem;
+
+    
+}
+nav a{
+    padding: 1em;
+}
+
+a {
+    color: aliceblue;
+    /*serve para remover a decoração do texto*/
+    text-decoration: none;
+}
+/*Faz com que a imagem fique dentro do container sem ultrapassar as margens dele*/
+.imagem{
+    width: 100%;
+    display: block;
+}
