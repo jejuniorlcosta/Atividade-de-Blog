@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+@font-face {
+    font-family: pokedex;
+    src: url(/font/orange\ juice\ 20.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Share Tech", sans-serif;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(/img/imagem-fundo2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.titulo-principal {
+    padding: 30px;
+    font-family: pokedex;
+    font-size: 4em;
+    text-shadow: 1px 8px 4px #1a1915;
+}
+
+.vermelho {
+    color: rgb(196, 14, 14);
+}
+
+.amarelo {
+    color: #FFDE00;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgba(40, 40, 41, 0.9);
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+header,
+footer {
+    background: linear-gradient(90deg, #ff0000, #0000ff, #008000);
+}
+
+section {
+    padding: 30px;
+}
+
+.info {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+}
+
+.subinfo {
+    font-size: 1.1rem;
+    color: #d9d9d9;
+    margin-bottom: 25px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filtro {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filtro:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+}
+
+.filtro.ativo {
+    background: #FFDE00;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.curiosidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-curiosidade {
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 6px solid #FFDE00;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease;
+}
+
+.card-curiosidade:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card-curiosidade:nth-child(even) {
+    border-left-color: rgb(196, 14, 14);
+}
+
+.card-curiosidade h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.resumo {
+    color: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+.conteudo-curioso {
+    display: none;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+.card-curiosidade.aberto .conteudo-curioso {
+    display: block;
+}
+
+.btn-curiosidade {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #FFDE00;
+    color: #1a1a1a;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-curiosidade:hover {
+    transform: scale(1.03);
+}
+
+.card-curiosidade.oculto {
+    display: none;
+}
+
+footer {
+    padding: 18px 25px;
+    font-size: 1rem;
+}
+
+footer p + p {
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    .titulo-principal {
+        font-size: 2.8em;
+        text-align: center;
+    }
+
+    .info {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .subinfo {
+        text-align: center;
+    }
+
+    .filtros {
+        justify-content: center;
+    }
+
+    .curiosidades {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

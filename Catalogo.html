@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Catálogo</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="titulo-principal">
+                <span class="amarelo">Poké</span><span class="vermelho">dex</span>
+            </h1>
+        </header>
+
+        <section>
+            <article>
+                <h1 class="info">Catálogo Pokémon</h1>
+                <p class="subinfo">
+                    Explore alguns dos Pokémon mais conhecidos e filtre por elemento.
+                </p>
+
+                <div class="filtros">
+                    <button class="filtro ativo" data-filtro="todos">Todos</button>
+                    <button class="filtro" data-filtro="planta">Planta</button>
+                    <button class="filtro" data-filtro="fogo">Fogo</button>
+                    <button class="filtro" data-filtro="agua">Água</button>
+                    <button class="filtro" data-filtro="eletrico">Elétrico</button>
+                    <button class="filtro" data-filtro="psiquico">Psíquico</button>
+                    <button class="filtro" data-filtro="normal">Normal</button>
+                    <button class="filtro" data-filtro="veneno">Veneno</button>
+                </div>
+
+                <div class="catalogo">
+                    <div class="card-pokemon" data-tipo="planta veneno">
+                        <img src="/img/bulbasaur.gif" alt="Bulbasaur" class="img-pokemon">
+                        <p class="numero">#001</p>
+                        <h2>Bulbasaur</h2>
+                        <div class="tipos">
+                            <span class="tipo planta">Planta</span>
+                            <span class="tipo veneno">Veneno</span>
+                        </div>
+                        <p class="descricao">Um dos iniciais de Kanto.</p>
+                    </div>
+
+                    <div class="card-pokemon" data-tipo="fogo">
+                        <img src="/img/charmander.gif" alt="Charmander" class="img-pokemon">
+                        <p class="numero">#004</p>
+                        <h2>Charmander</h2>
+                        <div class="tipos">
+                            <span class="tipo fogo">Fogo</span>
+                        </div>
+                        <p class="descricao">Inicial de fogo de Kanto.</p>
+                    </div>
+
+                    <div class="card-pokemon" data-tipo="agua">
+                        <img src="/img/squirtle.gif" alt="Squirtle" class="img-pokemon">
+                        <p class="numero">#007</p>
+                        <h2>Squirtle</h2>
+                        <div class="tipos">
+                            <span class="tipo agua">Água</span>
+                        </div>
+                        <p class="descricao">Pokémon de água muito conhecido.</p>
+                    </div>
+
+                    <div class="card-pokemon" data-tipo="eletrico">
+                        <img src="/img/pikachu.gif" alt="Pikachu" class="img-pokemon">
+                        <p class="numero">#025</p>
+                        <h2>Pikachu</h2>
+                        <div class="tipos">
+                            <span class="tipo eletrico">Elétrico</span>
+                        </div>
+                        <p class="descricao">Um dos Pokémon mais famosos.</p>
+                    </div>
+
+                    <div class="card-pokemon" data-tipo="normal">
+                        <img src="/img/eevee.gif" alt="Eevee" class="img-pokemon">
+                        <p class="numero">#133</p>
+                        <h2>Eevee</h2>
+                        <div class="tipos">
+                            <span class="tipo normal">Normal</span>
+                        </div>
+                        <p class="descricao">Pokémon com várias evoluções.</p>
+                    </div>
+
+                    <div class="card-pokemon" data-tipo="psiquico">
+                        <img src="/img/mew.gif" alt="Mew" class="img-pokemon">
+                        <p class="numero">#151</p>
+                        <h2>Mew</h2>
+                        <div class="tipos">
+                            <span class="tipo psiquico">Psíquico</span>
+                        </div>
+                        <p class="descricao">Pokémon raro e misterioso.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Confira o catálogo e descubra novos Pokémon!</p>
+            <p>Siga o nosso Instagram: @Pokedex</p>
+        </footer>
+    </div>
+
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>

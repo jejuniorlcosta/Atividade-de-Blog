@@ -22,17 +22,17 @@ footer {
     padding: 30px;
 }
 
-h1 {
+.titulo-principal {
     padding: 30px;
     font-family: pokedex;
     font-size: 4em;
     text-shadow: 1px 8px 4px #1a1915;
 }
-
+/*COR DO TITULO DO SITE*/
 .vermelho {
     color: rgb(196, 14, 14);
 }
-
+/* COR 2 DO TITULO DO SITE */
 .amarelo {
     color: #FFDE00;
 }
@@ -42,7 +42,7 @@ h1 {
     background-color: rgb(40, 40, 41, 0.9);
     margin: 0 auto;
 }
-
+/*Cor na parte superior e inferior do código*/
 header,
 footer {
     background: linear-gradient(90deg, #ff0000, #0000ff, #008000)
@@ -52,8 +52,6 @@ nav{
     background-color: #3b3b3b;
     display: flex;
     gap: 20rem;
-
-    
 }
 nav a{
     padding: 1em;
